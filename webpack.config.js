@@ -14,7 +14,7 @@ module.exports = {
   devServer: {
     compress: true,
     port: 3000,
-},
+  },
   module: {
     rules: [
       {
@@ -22,6 +22,27 @@ module.exports = {
         use: "ts-loader",
         include: [path.resolve(__dirname, "src")],
         exclude: /node_modules/,
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(html)$/,
+        use: ["html-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ["file-loader"],
       },
     ],
   },

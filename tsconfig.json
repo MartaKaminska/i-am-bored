@@ -1,14 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": true,
     "esModuleInterop": true,
-    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
     "moduleResolution": "node",
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
     "rootDir": ".",
-    "sourceMap": true
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5",
+    "typeRoots": ["./node_modules/@types", "./types/*"]
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts"]
 }
