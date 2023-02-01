@@ -1,29 +1,16 @@
-import { fetchApiData } from "../data";
-
+import Options from "./options";
 
 class App {
-  private appElement: HTMLElement | null= document.getElementById("app");
-  async setup(): Promise<void> {
-    // await fetchApiData();
-    this.showWelcomeImg();
-  }
+  private options = new Options();
 
-  private showWelcomeImg = () => {
-    // const img: HTMLImageElement = document.createElement("img");
-    // const imgSrc: string = "assets/img.jpg";
-    // img.setAttribute("src", imgSrc);
-    // img.setAttribute("id", "welcomeImg")
-    // this.appElement?.appendChild(img);
-  };
+  async setup(): Promise<void> {
+    this.askingButton();
+  }
 
   private askingButton = () => {
-    const button = document.getElementById("button");
-    // button?.addEventListener('click', this.showOptions())
+    const button: HTMLElement | null = document.getElementById("button");
+    button?.addEventListener("click", this.options.showOptions);
   };
-
-  private showOptions = () => {
-
-  }
 }
 
 export default App;

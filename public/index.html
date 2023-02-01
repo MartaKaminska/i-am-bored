@@ -10,19 +10,23 @@
 </head>
 
 <body>
-    <div id="app">
-        <img src="assets/img.jpg" id="welcomeImg">
-        <h3>You can use our</h3>
-        <button id="button">IDEAS</button>
-        <h3>or listen to this song</h3>
+    <div class="content">
+        <h1>Are you bored?</h1>
+        <div id="app">
+            <img src="assets/img.jpg" id="welcomeImg">
+            <h3>You can use our</h3>
+            <button id="button">IDEAS</button>
+            <div id="ideas"></div>
+            <h3>or listen this song</h3>
+        </div>
+        <div class="container">
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/7NuaK29J1fM"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="container">
-        <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/7NuaK29J1fM"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-    </div>
-    <script src="./bundle.js"></script>
+    <script type="text/javascript" src="./bundle.js"></script>
 </body>
 
 </html>
