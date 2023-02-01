@@ -7,7 +7,7 @@ class App {
     this.askingButton();
   }
 
-  private askingButton = () => {
+  private askingButton = (): void => {
     const button: HTMLElement | null = document.getElementById("button");
     button?.addEventListener("click", this.options.showOptions);
   };
