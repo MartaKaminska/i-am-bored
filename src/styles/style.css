@@ -2,17 +2,6 @@ body {
   background-color: rgb(91, 74, 74);
 }
 
-#app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#welcomeImg {
-  max-width: 100%;
-  margin: 30px 0;
-}
-
 h1,
 h2 {
   color: rgb(175, 161, 175);
@@ -22,24 +11,65 @@ h3 {
   color: rgb(157, 177, 49);
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 0 0 0;
+h4 {
+  color: rgb(39, 34, 23);
 }
 
-.container {
-  width: 400px;
-  max-width: 100vw;
+h5 {
+  color: rgb(28, 33, 37);
+  font-size: 150px;
+}
+
+a {
+  color: rgb(48, 157, 197);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#button {
+  background-color: rgb(53, 20, 20);
+  border-radius: 10%;
+  color: rgb(175, 161, 175);
+  font-weight: 600;
+  height: 50px;
+  width: 100px;
+}
+
+#ideaContainer {
+  align-items: center;
+  display: flex;
+  min-height: 220px;
+  max-width: 95vw;
+  overflow: hidden;
+  text-align: center;
+}
+
+#questionmark {
+  align-items: center;
+  display: flex;
+}
+
+#videoContainer {
   height: 225px;
-  margin-top: 50px;
+  margin-bottom: 80px;
+  max-width: 95vw;
+  width: 400px;
 }
 
-#ideas {
+#welcomeImg {
+  max-width: 100%;
+  margin: 30px 0;
+}
+
+.content {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 30px 20px;
-  min-height: 170px;
+  margin: 20px 0 0 0;
 }
